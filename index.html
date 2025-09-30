@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Red Ball Cricket Federation</title>
   <link rel="stylesheet" href="style.css">
@@ -11,45 +11,72 @@
   <header>
     <h1>Red Ball Cricket Federation</h1>
     <nav>
-      <a href="#photos">Gallery</a>
-      <a href="#tournaments">Tournaments</a>
-      <a href="#about">About Us</a>
+      <ul class="nav-links">
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#tournaments">Tournaments</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <!-- Photos Scrolling -->
-  <section id="photos" class="carousel">
-    <div class="carousel-container">
-      <img src="https://via.placeholder.com/800x400?text=Match+1" alt="Match 1">
-      <img src="https://via.placeholder.com/800x400?text=Match+2" alt="Match 2">
-      <img src="https://via.placeholder.com/800x400?text=Match+3" alt="Match 3">
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="carousel">
+      <div class="slides">
+        <img src="https://via.placeholder.com/1000x400?text=Match+1" alt="Match 1">
+        <img src="https://via.placeholder.com/1000x400?text=Match+2" alt="Match 2">
+        <img src="https://via.placeholder.com/1000x400?text=Match+3" alt="Match 3">
+      </div>
+      <button class="prev" onclick="prevSlide()">❮</button>
+      <button class="next" onclick="nextSlide()">❯</button>
     </div>
   </section>
 
-  <!-- Upcoming Tournaments -->
+  <!-- Tournaments Section -->
   <section id="tournaments">
     <h2>Upcoming Tournaments</h2>
-    <div class="tournament">
-      <h3>Indo-Sri Lanka Championship</h3>
-      <p>Date: November 2025</p>
-      <button onclick="registerTournament('Indo-Sri Lanka Championship')">Register Now</button>
-    </div>
-    <div class="tournament">
-      <h3>Red Ball Summer League</h3>
-      <p>Date: March 2026</p>
-      <button onclick="registerTournament('Red Ball Summer League')">Register Now</button>
+    <div class="tournaments-grid">
+      <div class="tournament-card">
+        <h3>Indo-Sri Lanka Championship</h3>
+        <p><strong>Date:</strong> November 2025</p>
+        <button onclick="register('Indo-Sri Lanka Championship')">Register</button>
+      </div>
+      <div class="tournament-card">
+        <h3>Red Ball Summer League</h3>
+        <p><strong>Date:</strong> March 2026</p>
+        <button onclick="register('Red Ball Summer League')">Register</button>
+      </div>
     </div>
   </section>
 
-  <!-- About Us -->
+  <!-- About Us Section -->
   <section id="about">
     <h2>About Us</h2>
     <p>
-      Red Ball Cricket Federation is dedicated to nurturing cricket talent and providing 
-      a platform for young athletes to showcase their skills. Our academy organizes 
-      domestic and international tournaments to promote the spirit of cricket globally.
+      Red Ball Cricket Federation is dedicated to nurturing cricket talent 
+      and providing a platform for young athletes to showcase their skills. 
+      Our academy organizes domestic and international tournaments to 
+      promote the spirit of cricket globally.
     </p>
   </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Red Ball Cricket Federation</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
