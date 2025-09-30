@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Ball Cricket Federation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Red Ball Cricket Federation</h1>
+    <nav>
+      <a href="#photos">Gallery</a>
+      <a href="#tournaments">Tournaments</a>
+      <a href="#about">About Us</a>
+    </nav>
+  </header>
+
+  <!-- Photos Scrolling -->
+  <section id="photos" class="carousel">
+    <div class="carousel-container">
+      <img src="https://via.placeholder.com/800x400?text=Match+1" alt="Match 1">
+      <img src="https://via.placeholder.com/800x400?text=Match+2" alt="Match 2">
+      <img src="https://via.placeholder.com/800x400?text=Match+3" alt="Match 3">
+    </div>
+  </section>
+
+  <!-- Upcoming Tournaments -->
+  <section id="tournaments">
+    <h2>Upcoming Tournaments</h2>
+    <div class="tournament">
+      <h3>Indo-Sri Lanka Championship</h3>
+      <p>Date: November 2025</p>
+      <button onclick="registerTournament('Indo-Sri Lanka Championship')">Register Now</button>
+    </div>
+    <div class="tournament">
+      <h3>Red Ball Summer League</h3>
+      <p>Date: March 2026</p>
+      <button onclick="registerTournament('Red Ball Summer League')">Register Now</button>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      Red Ball Cricket Federation is dedicated to nurturing cricket talent and providing 
+      a platform for young athletes to showcase their skills. Our academy organizes 
+      domestic and international tournaments to promote the spirit of cricket globally.
+    </p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
